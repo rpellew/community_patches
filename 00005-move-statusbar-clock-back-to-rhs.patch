@@ -95,8 +95,7 @@ index f0436dea..913be68c 100644
 +                    android:singleLine="true"
 +                    android:paddingStart="@dimen/status_bar_clock_starting_padding"
 +                    android:paddingEnd="@dimen/status_bar_clock_end_padding"
-+                    android:gravity="center_vertical|start"
-+        >
++                    android:gravity="center_vertical|start" />
      </LinearLayout>
  
      <ViewStub
