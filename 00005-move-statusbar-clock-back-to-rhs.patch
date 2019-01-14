@@ -39,7 +39,7 @@ index 680112c7..059f3b4c 100644
 +        systemui:showDark="false" />
  </LinearLayout>
 diff --git a/frameworks/base/packages/SystemUI/res/layout/status_bar.xml b/frameworks/base/packages/SystemUI/res/layout/status_bar.xml
-index f0436dea..913be68c 100644
+index f0436dea..4a8abde8 100644
 --- a/frameworks/base/packages/SystemUI/res/layout/status_bar.xml
 +++ b/frameworks/base/packages/SystemUI/res/layout/status_bar.xml
 @@ -70,7 +70,7 @@
@@ -80,7 +80,7 @@ index f0436dea..913be68c 100644
              android:layout_height="match_parent"
              android:layout_weight="1"
              android:orientation="horizontal"
-@@ -109,7 +109,18 @@
+@@ -109,7 +109,17 @@
              >
  
              <include layout="@layout/system_icons" />
@@ -95,7 +95,7 @@ index f0436dea..913be68c 100644
 +                    android:singleLine="true"
 +                    android:paddingStart="@dimen/status_bar_clock_starting_padding"
 +                    android:paddingEnd="@dimen/status_bar_clock_end_padding"
-+                    android:gravity="center_vertical|start" />
++                    android:gravity="center_vertical|start"/>
      </LinearLayout>
  
      <ViewStub
