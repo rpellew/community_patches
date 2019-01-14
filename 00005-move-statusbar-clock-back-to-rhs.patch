@@ -94,10 +94,10 @@ index f0436dea..ca399203 100644
      </LinearLayout>
  
      <ViewStub
-diff --git a/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java b/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java
+diff --git a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java
 index 409a7839..8f14265d 100644
---- a/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java
-+++ b/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java
+--- a/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java
++++ b/frameworks/base/packages/SystemUI/src/com/android/systemui/statusbar/phone/HeadsUpAppearanceController.java
 @@ -207,11 +207,7 @@ public class HeadsUpAppearanceController implements OnHeadsUpChangedListener,
                  mHeadsUpStatusBarView.setVisibility(View.VISIBLE);
                  CrossFadeHelper.fadeIn(mHeadsUpStatusBarView, CONTENT_FADE_DURATION /* duration */,
