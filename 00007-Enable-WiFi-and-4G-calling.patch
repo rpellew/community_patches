@@ -47,10 +47,10 @@ index 0b5dd7e7..076a34ed 100644
  
      <!-- ImsService package name to bind to by default. If none is specified in an overlay, an
           empty string is passed in -->
-diff --git a/device/system.prop b/device/system.prop
+diff --git a/device/google/wahoo/system.prop b/device/google/wahoo/system.prop
 index 20d7034..b8843ab 100644
---- a/device/system.prop
-+++ b/device/system.prop
+--- a/device/google/wahoo/system.prop
++++ b/device/google/wahoo/system.prop
 @@ -69,3 +69,13 @@ persist.data.df.dev_name=rmnet_usb0
  #ro.use_data_netmgrd=true
  persist.data.netmgrd.qos.enable=true
