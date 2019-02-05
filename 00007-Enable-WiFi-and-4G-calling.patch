@@ -24,7 +24,7 @@ index 0b5dd7e7..076a34ed 100644
  
      <!-- Flag specifying whether the device will use the "allow_hold_in_ims_call" carrier config
           option.  When false, the device will support holding of IMS calls, regardless of the
-@@ -2681,18 +2681,18 @@
+@@ -2681,15 +2681,15 @@
      <!-- Flag specifying whether VT should be available for carrier: independent of
           carrier provisioning. If false: hard disabled. If true: then depends on carrier
           provisioning, availability etc -->
@@ -42,11 +42,7 @@ index 0b5dd7e7..076a34ed 100644
 +    <bool name="config_carrier_wfc_ims_available">true</bool>
  
      <!-- Whether to use voip audio mode for ims call -->
--    <bool name="config_use_voip_mode_for_ims">false</bool>
-+    <bool name="config_use_voip_mode_for_ims">true</bool>
- 
-     <!-- ImsService package name to bind to by default. If none is specified in an overlay, an
-          empty string is passed in -->
+     <bool name="config_use_voip_mode_for_ims">false</bool>
 diff --git a/device/google/wahoo/system.prop b/device/google/wahoo/system.prop
 index 20d7034..b8843ab 100644
 --- a/device/google/wahoo/system.prop
