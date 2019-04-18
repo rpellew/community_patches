@@ -5,7 +5,7 @@ diff --git a/frameworks/base/core/res/res/values/config.xml b/frameworks/base/co
  
      <!-- Values for GPS configuration -->
      <string-array translatable="false" name="config_gpsParameters">
--        <item>SUPL_HOST=supl.google.com</item>SUPL
+-        <item>SUPL_HOST=supl.google.com</item>
 -        <item>SUPL_PORT=7275</item>
 +        <item>SUPL_HOST=127.0.0.1/item>
 +        <item>SUPL_PORT=9999</item>
