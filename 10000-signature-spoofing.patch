@@ -1,7 +1,7 @@
-diff --git a/core/res/AndroidManifest.xml b/core/res/AndroidManifest.xml
+diff --git a/frameworks/base/core/res/AndroidManifest.xml b/frameworks/base/core/res/AndroidManifest.xml
 index a3fccd96f22..a515a601c1b 100644
---- a/core/res/AndroidManifest.xml
-+++ b/core/res/AndroidManifest.xml
+--- a/frameworks/base/core/res/AndroidManifest.xml
++++ b/frameworks/base/core/res/AndroidManifest.xml
 @@ -1137,6 +1137,13 @@
                  android:description="@string/permdesc_manageOwnCalls"
                  android:protectionLevel="normal" />
@@ -16,10 +16,10 @@ index a3fccd96f22..a515a601c1b 100644
      <!--Allows an app which implements the
          {@link android.telecom.InCallService InCallService} API to be eligible to be enabled as a
          calling companion app. This means that the Telecom framework will bind to the app's
-diff --git a/core/res/res/values/config.xml b/core/res/res/values/config.xml
+diff --git a/frameworks/base/core/res/res/values/config.xml b/frameworks/base/core/res/res/values/config.xml
 index 0391530c483..5df70cc1bd1 100644
---- a/core/res/res/values/config.xml
-+++ b/core/res/res/values/config.xml
+--- a/frameworks/base/core/res/res/values/config.xml
++++ b/frameworks/base/core/res/res/values/config.xml
 @@ -1855,6 +1855,8 @@
      <string-array name="config_locationProviderPackageNames" translatable="false">
          <!-- The standard AOSP fused location provider -->
@@ -29,10 +29,10 @@ index 0391530c483..5df70cc1bd1 100644
      </string-array>
  
      <!-- This string array can be overriden to enable test location providers initially. -->
-diff --git a/core/res/res/values/strings.xml b/core/res/res/values/strings.xml
+diff --git a/frameworks/base/core/res/res/values/strings.xml b/frameworks/base/core/res/res/values/strings.xml
 index 152b131af8f..247e9aee7ac 100644
---- a/core/res/res/values/strings.xml
-+++ b/core/res/res/values/strings.xml
+--- a/frameworks/base/core/res/res/values/strings.xml
++++ b/frameworks/base/core/res/res/values/strings.xml
 @@ -827,6 +827,14 @@
  
      <!--  Permissions -->
@@ -48,10 +48,10 @@ index 152b131af8f..247e9aee7ac 100644
      <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
      <string name="permlab_statusBar">disable or modify status bar</string>
      <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-diff --git a/services/core/java/com/android/server/pm/PackageManagerService.java b/services/core/java/com/android/server/pm/PackageManagerService.java
+diff --git a/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java b/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
 index 7469e099421..754c813c164 100644
---- a/services/core/java/com/android/server/pm/PackageManagerService.java
-+++ b/services/core/java/com/android/server/pm/PackageManagerService.java
+--- a/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
++++ b/frameworks/base/services/core/java/com/android/server/pm/PackageManagerService.java
 @@ -4092,8 +4092,9 @@ public class PackageManagerService extends IPackageManager.Stub
              final Set<String> permissions = ArrayUtils.isEmpty(p.requestedPermissions)
                      ? Collections.emptySet() : permissionsState.getPermissions(userId);
